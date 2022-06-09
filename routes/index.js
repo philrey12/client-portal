@@ -3,7 +3,7 @@ const router = express.Router()
 
 // home page
 router.get('/', (req, res) => {
-    res.send('Home Page')
+    res.redirect('/user/dashboard')
 })
 
 module.exports = router
