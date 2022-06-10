@@ -1,4 +1,4 @@
-<div class="row mt-2">
+<div class="row mt-2 mb-4">
     <div class="col">
         <div class="card px-3 py-3">
             <div class="d-flex justify-content-between">
@@ -19,7 +19,7 @@
     </div>
 </div>
 
-<div class="row mt-4">
+<div class="row mb-4">
     <div class="col">
         <div class="d-flex justify-content-end">
             <select class="form-select rounded" style="width: 160px;" aria-label="Days">
@@ -31,7 +31,7 @@
     </div>
 </div>
 
-<div class="row mt-4">
+<div class="row mb-4">
     <div class="col">
         <div class="d-flex justify-content-between">
             <div class="card w-100 me-2">
@@ -66,7 +66,7 @@
     </div>
 </div>
 
-<div class="row mt-4">
+<div class="row mb-5">
     <div class="col">
         <div class="w-100 bg-primary text-light py-3">
             <div class="lead ms-4">View Graph</div>
@@ -74,5 +74,69 @@
         <div class="card w-100 p-4">
             <canvas id="statsChart" style="height: 16px;"></canvas>
         </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col px-4">
+        <h4 class="mb-3">Form Response</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">SUBMISSION DATE</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">EMAIL ADDRESS</th>
+                    <th scope="col">MESSAGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>06 June 2022</td>
+                    <td>James Smith</td>
+                    <td>jamessmith@testmail.com</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="text-end"><button class="btn btn-primary" style="width: 100px;">Open</button></td>
+                </tr>
+                <tr>
+                    <td>07 June 2022</td>
+                    <td>Jane Doe</td>
+                    <td>janedoe@testmail.com</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing.</td>
+                    <td class="text-end"><button class="btn btn-primary" style="width: 100px;">Open</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col px-4 mb-3">
+        <h4 class="mb-3">Activity Log</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">EVENT</th>
+                    <th scope="col">USER</th>
+                    <th scope="col">EMAIL ADDRESS</th>
+                    <th scope="col">DATE & TIME</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Site Published</td>
+                    <td>James Smith</td>
+                    <td>jamessmith@testmail.com</td>
+                    <td>06 June 2022 3:00pm</td>
+                    <td class="text-end"><button class="btn btn-primary" style="width: 100px;">Open</button></td>
+                </tr>
+                <tr>
+                    <td>Site Published</td>
+                    <td>Jane Doe</td>
+                    <td>janedoe@testmail.com</td>
+                    <td>07 June 2022 9:25am</td>
+                    <td class="text-end"><button class="btn btn-primary" style="width: 100px;">Open</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
