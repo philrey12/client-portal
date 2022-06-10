@@ -1,10 +1,161 @@
-<div class="container">
-    <h2>Profile</h2>
-    <div class="row mb-5">
-        <div class="col">
-            <div class="w-100 bg-primary text-light py-3">
-                <div class="lead ms-4">Contact Information</div>
+<h2>Profile</h2>
+<!-- contact information -->
+<div class="row mt-3 mb-4">
+    <div class="w-100 bg-primary text-light py-3">
+        <div class="lead ms-4">Contact Information</div>
+    </div>
+    <div class="card card-body pt-4 px-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" aria-label="First Name" class="form-control" id="firstname" required>
+                </div>
             </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" aria-label="Last Name" class="form-control" id="lastname" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="companyname" class="form-label">Company/Account</label>
+                    <input type="text" aria-label="Company/Account" class="form-control" id="companyname" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="department" class="form-label">Department</label>
+                    <input type="text" aria-label="Department" class="form-control" id="department">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="persona" class="form-label">Persona</label>
+                <select class="form-select" aria-label="Persona" id="persona" style="height: 40px;">
+                    <option value="1">Persona 1</option>
+                    <option value="2">Persona 2</option>
+                    <option value="3">Persona 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="text" aria-label="Phone" class="form-control" id="phone">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile</label>
+                    <input type="text" aria-label="Mobile" class="form-control" id="mobile">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="fax" class="form-label">Fax</label>
+                    <input type="text" aria-label="Fax" class="form-control" id="fax">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="twitter" class="form-label">Twitter</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="at">@</span>
+                        <input type="text" aria-label="Twitter" class="form-control" id="twitter">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="assistant" class="form-label">Assistant</label>
+                    <input type="text" aria-label="Assistant" class="form-control" id="assistant">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="asstphone" class="form-label">Asst. Phone</label>
+                    <input type="text" aria-label="Asst. Phone" class="form-control" id="asstphone">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="birthdate" class="form-label">Date of Birth</label>
+                    <input type="date" aria-label="Date of Birth" class="form-control" id="birthdate">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="workdrivefolderurl" class="form-label">Workdrive Folder URL</label>
+                    <input type="url" aria-label="Workdrive Folder URL" class="form-control" id="workdrivefolderurl">
+                </div>
+            </div>
+        </div>
+        <div class="align-self-end mt-2 mb-2">
+            <button class="btn btn-primary" style="width: 120px;">Save</button>
+        </div>
+    </div>
+</div>
+
+<!-- address information -->
+<div class="row mt-3 mb-5">
+    <div class="w-100 bg-primary text-light py-3">
+        <div class="lead ms-4">Address Information</div>
+    </div>
+    <div class="card card-body pt-4 px-5">
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="street" class="form-label">Street</label>
+                <input type="text" aria-label="Street" class="form-control" id="street">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" aria-label="City" class="form-control" id="city">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="state" class="form-label">State</label>
+                    <input type="text" aria-label="State" class="form-control" id="state" required>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <input type="text" aria-label="Country" class="form-control" id="country">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label for="zipcode" class="form-label">Zip Code</label>
+                    <input type="text" aria-label="Zip Code" class="form-control" id="zipcode">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="description" class="form-label">Description Information</label>
+                <textarea type="text" aria-label="Description" class="form-control" id="description" style="height: 140px;"></textarea>
+            </div>
+        </div>
+        <div class="align-self-end mt-2 mb-2">
+            <button class="btn btn-primary" style="width: 120px;">Save</button>
         </div>
     </div>
 </div>
