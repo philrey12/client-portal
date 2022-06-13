@@ -7,7 +7,7 @@ router.get('/dashboard', (req, res) => {
         dashboard: 'active',
         profile: '',
         projects: '',
-        billings: '',
+        billing_invoice: '',
         title: 'Dashboard - Client Portal'
     })
 })
@@ -18,7 +18,7 @@ router.get('/profile', (req, res) => {
         dashboard: '',
         profile: 'active',
         projects: '',
-        billings: '',
+        billing_invoice: '',
         title: 'Profile - Client Portal'
     })
 })
@@ -29,19 +29,19 @@ router.get('/projects', (req, res) => {
         dashboard: '',
         profile: '',
         projects: 'active',
-        billings: '',
+        billing_invoice: '',
         title: 'Projects - Client Portal'
     })
 })
 
 // billings page
-router.get('/billings', (req, res) => {
-    res.render('billings', {
+router.get('/billing-invoice', (req, res) => {
+    res.render('billing-invoice', {
         dashboard: '',
         profile: '',
         projects: '',
-        billings: 'active',
-        title: 'Billings & Invoices - Client Portal'
+        billing_invoice: 'active',
+        title: 'Billing & Invoice - Client Portal'
     })
 })
 
